@@ -1,0 +1,410 @@
+2026-03-28 07:40:18 Config:
+{'all_joints': [[0], [1], [2], [3]],
+ 'all_joints_names': ['Snout', 'DorsalFin', 'TailBase', 'TailTip'],
+ 'alpha_r': 0.02,
+ 'apply_prob': 0.5,
+ 'batch_size': 1,
+ 'contrast': {'clahe': True,
+              'claheratio': 0.1,
+              'histeq': True,
+              'histeqratio': 0.1},
+ 'convolution': {'edge': False,
+                 'emboss': {'alpha': [0.0, 1.0], 'strength': [0.5, 1.5]},
+                 'embossratio': 0.1,
+                 'sharpen': False,
+                 'sharpenratio': 0.3},
+ 'crop_pad': 0,
+ 'cropratio': 0.4,
+ 'dataset': 'training-datasets/iteration-0/UnaugmentedDataSet_Cloud_Deployment_SERMar28/Cloud_Deployment_SER_Dev95shuffle1.mat',
+ 'dataset_type': 'default',
+ 'decay_steps': 30000,
+ 'deterministic': False,
+ 'display_iters': 1000,
+ 'fg_fraction': 0.25,
+ 'global_scale': 0.4,
+ 'init_weights': '/',
+ 'intermediate_supervision': False,
+ 'intermediate_supervision_layer': 12,
+ 'location_refinement': True,
+ 'locref_huber_loss': True,
+ 'locref_loss_weight': 0.05,
+ 'locref_stdev': 7.2801,
+ 'log_dir': 'log',
+ 'lr_init': 0.0005,
+ 'max_input_size': 1500,
+ 'mean_pixel': [123.68, 116.779, 103.939],
+ 'metadataset': 'training-datasets/iteration-0/UnaugmentedDataSet_Cloud_Deployment_SERMar28/Documentation_data-Cloud_Deployment_SER_95shuffle1.pickle',
+ 'min_input_size': 64,
+ 'mirror': False,
+ 'multi_stage': False,
+ 'multi_step': [[0.005, 10000],
+                [0.02, 430000],
+                [0.002, 730000],
+                [0.001, 1030000]],
+ 'net_type': 'resnet50',
+ 'num_joints': 4,
+ 'optimizer': 'sgd',
+ 'pairwise_huber_loss': False,
+ 'pairwise_predict': False,
+ 'partaffinityfield_predict': False,
+ 'pos_dist_thresh': 17,
+ 'project_path': '/mnt/Data/Projects/cloud_deployment/Scripts/Cloud_Deployment_SER-Dev-2026-03-28',
+ 'regularize': False,
+ 'rotation': 25,
+ 'rotratio': 0.4,
+ 'save_iters': 50000,
+ 'scale_jitter_lo': 0.75,
+ 'scale_jitter_up': 1.0,
+ 'scoremap_dir': 'test',
+ 'shuffle': True,
+ 'snapshot_prefix': '/mnt/Data/Projects/cloud_deployment/Scripts/Cloud_Deployment_SER-Dev-2026-03-28/dlc-models/iteration-0/Cloud_Deployment_SERMar28-trainset95shuffle1/train/snapshot',
+ 'stride': 8.0,
+ 'weigh_negatives': False,
+ 'weigh_only_present_joints': False,
+ 'weigh_part_predictions': False,
+ 'weight_decay': 0.0001}
+2026-03-28 07:41:43 Config:
+{'all_joints': [[0], [1], [2], [3]],
+ 'all_joints_names': ['Snout', 'DorsalFin', 'TailBase', 'TailTip'],
+ 'alpha_r': 0.02,
+ 'apply_prob': 0.5,
+ 'batch_size': 1,
+ 'contrast': {'clahe': True,
+              'claheratio': 0.1,
+              'histeq': True,
+              'histeqratio': 0.1},
+ 'convolution': {'edge': False,
+                 'emboss': {'alpha': [0.0, 1.0], 'strength': [0.5, 1.5]},
+                 'embossratio': 0.1,
+                 'sharpen': False,
+                 'sharpenratio': 0.3},
+ 'crop_pad': 0,
+ 'cropratio': 0.4,
+ 'dataset': 'training-datasets/iteration-0/UnaugmentedDataSet_Cloud_Deployment_SERMar28/Cloud_Deployment_SER_Dev95shuffle1.mat',
+ 'dataset_type': 'default',
+ 'decay_steps': 30000,
+ 'deterministic': False,
+ 'display_iters': 1000,
+ 'fg_fraction': 0.25,
+ 'global_scale': 0.4,
+ 'init_weights': '/home/marno/miniconda3/envs/dlc/lib/python3.10/site-packages/deeplabcut/pose_estimation_tensorflow/models/pretrained/resnet_v1_50.ckpt',
+ 'intermediate_supervision': False,
+ 'intermediate_supervision_layer': 12,
+ 'location_refinement': True,
+ 'locref_huber_loss': True,
+ 'locref_loss_weight': 0.05,
+ 'locref_stdev': 7.2801,
+ 'log_dir': 'log',
+ 'lr_init': 0.0005,
+ 'max_input_size': 1500,
+ 'mean_pixel': [123.68, 116.779, 103.939],
+ 'metadataset': 'training-datasets/iteration-0/UnaugmentedDataSet_Cloud_Deployment_SERMar28/Documentation_data-Cloud_Deployment_SER_95shuffle1.pickle',
+ 'min_input_size': 64,
+ 'mirror': False,
+ 'multi_stage': False,
+ 'multi_step': [[0.005, 10000],
+                [0.02, 430000],
+                [0.002, 730000],
+                [0.001, 1030000]],
+ 'net_type': 'resnet_50',
+ 'num_joints': 4,
+ 'optimizer': 'sgd',
+ 'pairwise_huber_loss': False,
+ 'pairwise_predict': False,
+ 'partaffinityfield_predict': False,
+ 'pos_dist_thresh': 17,
+ 'project_path': '/mnt/Data/Projects/cloud_deployment/Scripts/Cloud_Deployment_SER-Dev-2026-03-28',
+ 'regularize': False,
+ 'rotation': 25,
+ 'rotratio': 0.4,
+ 'save_iters': 50000,
+ 'scale_jitter_lo': 0.75,
+ 'scale_jitter_up': 1.0,
+ 'scoremap_dir': 'test',
+ 'shuffle': True,
+ 'snapshot_prefix': '/mnt/Data/Projects/cloud_deployment/Scripts/Cloud_Deployment_SER-Dev-2026-03-28/dlc-models/iteration-0/Cloud_Deployment_SERMar28-trainset95shuffle1/train/snapshot',
+ 'stride': 8.0,
+ 'weigh_negatives': False,
+ 'weigh_only_present_joints': False,
+ 'weigh_part_predictions': False,
+ 'weight_decay': 0.0001}
+2026-03-28 07:48:56 Config:
+{'all_joints': [[0], [1], [2], [3]],
+ 'all_joints_names': ['Snout', 'DorsalFin', 'TailBase', 'TailTip'],
+ 'alpha_r': 0.02,
+ 'apply_prob': 0.5,
+ 'batch_size': 1,
+ 'contrast': {'clahe': True,
+              'claheratio': 0.1,
+              'histeq': True,
+              'histeqratio': 0.1},
+ 'convolution': {'edge': False,
+                 'emboss': {'alpha': [0.0, 1.0], 'strength': [0.5, 1.5]},
+                 'embossratio': 0.1,
+                 'sharpen': False,
+                 'sharpenratio': 0.3},
+ 'crop_pad': 0,
+ 'cropratio': 0.4,
+ 'dataset': 'training-datasets/iteration-0/UnaugmentedDataSet_Cloud_Deployment_SERMar28/Cloud_Deployment_SER_Dev95shuffle1.mat',
+ 'dataset_type': 'default',
+ 'decay_steps': 30000,
+ 'deterministic': False,
+ 'display_iters': 1000,
+ 'fg_fraction': 0.25,
+ 'global_scale': 0.4,
+ 'init_weights': '/home/marno/miniconda3/envs/dlc/lib/python3.10/site-packages/deeplabcut/pose_estimation_tensorflow/models/pretrained/resnet_v1_50.ckpt',
+ 'intermediate_supervision': False,
+ 'intermediate_supervision_layer': 12,
+ 'location_refinement': True,
+ 'locref_huber_loss': True,
+ 'locref_loss_weight': 0.05,
+ 'locref_stdev': 7.2801,
+ 'log_dir': 'log',
+ 'lr_init': 0.0005,
+ 'max_input_size': 1500,
+ 'mean_pixel': [123.68, 116.779, 103.939],
+ 'metadataset': 'training-datasets/iteration-0/UnaugmentedDataSet_Cloud_Deployment_SERMar28/Documentation_data-Cloud_Deployment_SER_95shuffle1.pickle',
+ 'min_input_size': 64,
+ 'mirror': False,
+ 'multi_stage': False,
+ 'multi_step': [[0.005, 10000],
+                [0.02, 430000],
+                [0.002, 730000],
+                [0.001, 1030000]],
+ 'net_type': 'resnet_50',
+ 'num_joints': 4,
+ 'optimizer': 'sgd',
+ 'pairwise_huber_loss': False,
+ 'pairwise_predict': False,
+ 'partaffinityfield_predict': False,
+ 'pos_dist_thresh': 17,
+ 'project_path': '/mnt/Data/Projects/cloud_deployment/Scripts/Cloud_Deployment_SER-Dev-2026-03-28',
+ 'regularize': False,
+ 'rotation': 25,
+ 'rotratio': 0.4,
+ 'save_iters': 50000,
+ 'scale_jitter_lo': 0.75,
+ 'scale_jitter_up': 1.0,
+ 'scoremap_dir': 'test',
+ 'shuffle': True,
+ 'snapshot_prefix': '/mnt/Data/Projects/cloud_deployment/Scripts/Cloud_Deployment_SER-Dev-2026-03-28/dlc-models/iteration-0/Cloud_Deployment_SERMar28-trainset95shuffle1/train/snapshot',
+ 'stride': 8.0,
+ 'weigh_negatives': False,
+ 'weigh_only_present_joints': False,
+ 'weigh_part_predictions': False,
+ 'weight_decay': 0.0001}
+2026-03-28 07:54:59 iteration: 1000 loss: 0.0092 lr: 0.005
+2026-03-28 07:57:50 iteration: 2000 loss: 0.0049 lr: 0.005
+2026-03-28 08:00:40 iteration: 3000 loss: 0.0042 lr: 0.005
+2026-03-28 08:03:29 iteration: 4000 loss: 0.0037 lr: 0.005
+2026-03-28 08:06:17 iteration: 5000 loss: 0.0035 lr: 0.005
+2026-03-28 08:09:01 iteration: 6000 loss: 0.0032 lr: 0.005
+2026-03-28 08:11:47 iteration: 7000 loss: 0.0030 lr: 0.005
+2026-03-28 08:14:32 iteration: 8000 loss: 0.0029 lr: 0.005
+2026-03-28 08:17:19 iteration: 9000 loss: 0.0027 lr: 0.005
+2026-03-28 08:20:07 iteration: 10000 loss: 0.0026 lr: 0.005
+2026-03-28 08:22:55 iteration: 11000 loss: 0.0041 lr: 0.02
+2026-03-28 08:25:43 iteration: 12000 loss: 0.0033 lr: 0.02
+2026-03-28 08:28:27 iteration: 13000 loss: 0.0028 lr: 0.02
+2026-03-28 08:31:12 iteration: 14000 loss: 0.0029 lr: 0.02
+2026-03-28 08:33:58 iteration: 15000 loss: 0.0027 lr: 0.02
+2026-03-28 08:36:43 iteration: 16000 loss: 0.0025 lr: 0.02
+2026-03-28 08:39:27 iteration: 17000 loss: 0.0021 lr: 0.02
+2026-03-28 08:42:16 iteration: 18000 loss: 0.0022 lr: 0.02
+2026-03-28 08:45:01 iteration: 19000 loss: 0.0021 lr: 0.02
+2026-03-28 08:47:49 iteration: 20000 loss: 0.0020 lr: 0.02
+2026-03-28 08:50:38 iteration: 21000 loss: 0.0019 lr: 0.02
+2026-03-28 08:53:24 iteration: 22000 loss: 0.0019 lr: 0.02
+2026-03-28 08:56:07 iteration: 23000 loss: 0.0018 lr: 0.02
+2026-03-28 08:58:50 iteration: 24000 loss: 0.0018 lr: 0.02
+2026-03-28 09:01:35 iteration: 25000 loss: 0.0017 lr: 0.02
+2026-03-28 09:04:20 iteration: 26000 loss: 0.0017 lr: 0.02
+2026-03-28 09:07:04 iteration: 27000 loss: 0.0016 lr: 0.02
+2026-03-28 09:09:46 iteration: 28000 loss: 0.0017 lr: 0.02
+2026-03-28 09:12:31 iteration: 29000 loss: 0.0016 lr: 0.02
+2026-03-28 09:15:17 iteration: 30000 loss: 0.0017 lr: 0.02
+2026-03-28 09:18:02 iteration: 31000 loss: 0.0016 lr: 0.02
+2026-03-28 09:20:47 iteration: 32000 loss: 0.0015 lr: 0.02
+2026-03-28 09:23:30 iteration: 33000 loss: 0.0015 lr: 0.02
+2026-03-28 09:26:20 iteration: 34000 loss: 0.0015 lr: 0.02
+2026-03-28 09:29:06 iteration: 35000 loss: 0.0015 lr: 0.02
+2026-03-28 09:31:58 iteration: 36000 loss: 0.0015 lr: 0.02
+2026-03-28 09:34:49 iteration: 37000 loss: 0.0015 lr: 0.02
+2026-03-28 09:37:39 iteration: 38000 loss: 0.0015 lr: 0.02
+2026-03-28 09:40:31 iteration: 39000 loss: 0.0014 lr: 0.02
+2026-03-28 09:43:22 iteration: 40000 loss: 0.0014 lr: 0.02
+2026-03-28 09:46:12 iteration: 41000 loss: 0.0014 lr: 0.02
+2026-03-28 09:48:59 iteration: 42000 loss: 0.0014 lr: 0.02
+2026-03-28 09:51:48 iteration: 43000 loss: 0.0013 lr: 0.02
+2026-03-28 09:54:35 iteration: 44000 loss: 0.0013 lr: 0.02
+2026-03-28 09:57:20 iteration: 45000 loss: 0.0013 lr: 0.02
+2026-03-28 10:00:05 iteration: 46000 loss: 0.0013 lr: 0.02
+2026-03-28 10:02:52 iteration: 47000 loss: 0.0013 lr: 0.02
+2026-03-28 10:05:37 iteration: 48000 loss: 0.0013 lr: 0.02
+2026-03-28 10:08:24 iteration: 49000 loss: 0.0012 lr: 0.02
+2026-03-28 10:11:10 iteration: 50000 loss: 0.0012 lr: 0.02
+2026-03-28 10:13:52 iteration: 51000 loss: 0.0012 lr: 0.02
+2026-03-28 10:16:38 iteration: 52000 loss: 0.0012 lr: 0.02
+2026-03-28 10:19:23 iteration: 53000 loss: 0.0012 lr: 0.02
+2026-03-28 10:22:10 iteration: 54000 loss: 0.0012 lr: 0.02
+2026-03-28 10:24:57 iteration: 55000 loss: 0.0012 lr: 0.02
+2026-03-28 10:27:41 iteration: 56000 loss: 0.0012 lr: 0.02
+2026-03-28 10:30:29 iteration: 57000 loss: 0.0011 lr: 0.02
+2026-03-28 10:33:17 iteration: 58000 loss: 0.0012 lr: 0.02
+2026-03-28 10:36:04 iteration: 59000 loss: 0.0011 lr: 0.02
+2026-03-28 10:38:51 iteration: 60000 loss: 0.0011 lr: 0.02
+2026-03-28 10:41:34 iteration: 61000 loss: 0.0011 lr: 0.02
+2026-03-28 10:44:20 iteration: 62000 loss: 0.0011 lr: 0.02
+2026-03-28 10:47:08 iteration: 63000 loss: 0.0012 lr: 0.02
+2026-03-28 10:49:54 iteration: 64000 loss: 0.0011 lr: 0.02
+2026-03-28 10:52:40 iteration: 65000 loss: 0.0011 lr: 0.02
+2026-03-28 10:55:25 iteration: 66000 loss: 0.0011 lr: 0.02
+2026-03-28 10:58:12 iteration: 67000 loss: 0.0011 lr: 0.02
+2026-03-28 11:00:57 iteration: 68000 loss: 0.0010 lr: 0.02
+2026-03-28 11:03:42 iteration: 69000 loss: 0.0011 lr: 0.02
+2026-03-28 11:06:29 iteration: 70000 loss: 0.0011 lr: 0.02
+2026-03-28 11:09:16 iteration: 71000 loss: 0.0011 lr: 0.02
+2026-03-28 11:12:01 iteration: 72000 loss: 0.0010 lr: 0.02
+2026-03-28 11:14:48 iteration: 73000 loss: 0.0010 lr: 0.02
+2026-03-28 11:17:33 iteration: 74000 loss: 0.0010 lr: 0.02
+2026-03-28 11:20:22 iteration: 75000 loss: 0.0011 lr: 0.02
+2026-03-28 11:23:10 iteration: 76000 loss: 0.0010 lr: 0.02
+2026-03-28 11:26:01 iteration: 77000 loss: 0.0010 lr: 0.02
+2026-03-28 11:28:44 iteration: 78000 loss: 0.0010 lr: 0.02
+2026-03-28 11:31:32 iteration: 79000 loss: 0.0010 lr: 0.02
+2026-03-28 11:34:17 iteration: 80000 loss: 0.0010 lr: 0.02
+2026-03-28 11:34:17 Config:
+{'all_joints': [[0], [1], [2], [3]],
+ 'all_joints_names': ['Snout', 'DorsalFin', 'TailBase', 'TailTip'],
+ 'batch_size': 1,
+ 'crop_pad': 0,
+ 'dataset': 'training-datasets/iteration-0/UnaugmentedDataSet_Cloud_Deployment_SERMar28/Cloud_Deployment_SER_Dev95shuffle1.mat',
+ 'dataset_type': 'imgaug',
+ 'deterministic': False,
+ 'fg_fraction': 0.25,
+ 'global_scale': 0.4,
+ 'init_weights': '/home/marno/miniconda3/envs/dlc/lib/python3.10/site-packages/deeplabcut/pose_estimation_tensorflow/models/pretrained/resnet_v1_50.ckpt',
+ 'intermediate_supervision': False,
+ 'intermediate_supervision_layer': 12,
+ 'location_refinement': True,
+ 'locref_huber_loss': True,
+ 'locref_loss_weight': 1.0,
+ 'locref_stdev': 7.2801,
+ 'log_dir': 'log',
+ 'mean_pixel': [123.68, 116.779, 103.939],
+ 'mirror': False,
+ 'net_type': 'resnet_50',
+ 'num_joints': 4,
+ 'optimizer': 'sgd',
+ 'pairwise_huber_loss': True,
+ 'pairwise_predict': False,
+ 'partaffinityfield_predict': False,
+ 'regularize': False,
+ 'scoremap_dir': 'test',
+ 'shuffle': True,
+ 'snapshot_prefix': '/mnt/Data/Projects/cloud_deployment/Scripts/Cloud_Deployment_SER-Dev-2026-03-28/dlc-models/iteration-0/Cloud_Deployment_SERMar28-trainset95shuffle1/test/snapshot',
+ 'stride': 8.0,
+ 'weigh_negatives': False,
+ 'weigh_only_present_joints': False,
+ 'weigh_part_predictions': False,
+ 'weight_decay': 0.0001}
+2026-03-28 11:34:17 Config:
+{'all_joints': [[0], [1], [2], [3]],
+ 'all_joints_names': ['Snout', 'DorsalFin', 'TailBase', 'TailTip'],
+ 'alpha_r': 0.02,
+ 'apply_prob': 0.5,
+ 'batch_size': 1,
+ 'contrast': {'clahe': True,
+              'claheratio': 0.1,
+              'histeq': True,
+              'histeqratio': 0.1},
+ 'convolution': {'edge': False,
+                 'emboss': {'alpha': [0.0, 1.0], 'strength': [0.5, 1.5]},
+                 'embossratio': 0.1,
+                 'sharpen': False,
+                 'sharpenratio': 0.3},
+ 'crop_pad': 0,
+ 'cropratio': 0.4,
+ 'dataset': 'training-datasets/iteration-0/UnaugmentedDataSet_Cloud_Deployment_SERMar28/Cloud_Deployment_SER_Dev95shuffle1.mat',
+ 'dataset_type': 'default',
+ 'decay_steps': 30000,
+ 'deterministic': False,
+ 'display_iters': 1000,
+ 'fg_fraction': 0.25,
+ 'global_scale': 0.4,
+ 'init_weights': '/home/marno/miniconda3/envs/dlc/lib/python3.10/site-packages/deeplabcut/pose_estimation_tensorflow/models/pretrained/resnet_v1_50.ckpt',
+ 'intermediate_supervision': False,
+ 'intermediate_supervision_layer': 12,
+ 'location_refinement': True,
+ 'locref_huber_loss': True,
+ 'locref_loss_weight': 0.05,
+ 'locref_stdev': 7.2801,
+ 'log_dir': 'log',
+ 'lr_init': 0.0005,
+ 'max_input_size': 1500,
+ 'mean_pixel': [123.68, 116.779, 103.939],
+ 'metadataset': 'training-datasets/iteration-0/UnaugmentedDataSet_Cloud_Deployment_SERMar28/Documentation_data-Cloud_Deployment_SER_95shuffle1.pickle',
+ 'min_input_size': 64,
+ 'mirror': False,
+ 'multi_stage': False,
+ 'multi_step': [[0.005, 10000],
+                [0.02, 430000],
+                [0.002, 730000],
+                [0.001, 1030000]],
+ 'net_type': 'resnet_50',
+ 'num_joints': 4,
+ 'optimizer': 'sgd',
+ 'pairwise_huber_loss': False,
+ 'pairwise_predict': False,
+ 'partaffinityfield_predict': False,
+ 'pos_dist_thresh': 17,
+ 'project_path': '/mnt/Data/Projects/cloud_deployment/Scripts/Cloud_Deployment_SER-Dev-2026-03-28',
+ 'regularize': False,
+ 'rotation': 25,
+ 'rotratio': 0.4,
+ 'save_iters': 50000,
+ 'scale_jitter_lo': 0.75,
+ 'scale_jitter_up': 1.0,
+ 'scoremap_dir': 'test',
+ 'shuffle': True,
+ 'snapshot_prefix': '/mnt/Data/Projects/cloud_deployment/Scripts/Cloud_Deployment_SER-Dev-2026-03-28/dlc-models/iteration-0/Cloud_Deployment_SERMar28-trainset95shuffle1/train/snapshot',
+ 'stride': 8.0,
+ 'weigh_negatives': False,
+ 'weigh_only_present_joints': False,
+ 'weigh_part_predictions': False,
+ 'weight_decay': 0.0001}
+2026-03-28 11:36:15 Config:
+{'all_joints': [[0], [1], [2], [3]],
+ 'all_joints_names': ['Snout', 'DorsalFin', 'TailBase', 'TailTip'],
+ 'batch_size': 1,
+ 'crop_pad': 0,
+ 'dataset': 'training-datasets/iteration-0/UnaugmentedDataSet_Cloud_Deployment_SERMar28/Cloud_Deployment_SER_Dev95shuffle1.mat',
+ 'dataset_type': 'imgaug',
+ 'deterministic': False,
+ 'fg_fraction': 0.25,
+ 'global_scale': 0.4,
+ 'init_weights': '/home/marno/miniconda3/envs/dlc/lib/python3.10/site-packages/deeplabcut/pose_estimation_tensorflow/models/pretrained/resnet_v1_50.ckpt',
+ 'intermediate_supervision': False,
+ 'intermediate_supervision_layer': 12,
+ 'location_refinement': True,
+ 'locref_huber_loss': True,
+ 'locref_loss_weight': 1.0,
+ 'locref_stdev': 7.2801,
+ 'log_dir': 'log',
+ 'mean_pixel': [123.68, 116.779, 103.939],
+ 'mirror': False,
+ 'net_type': 'resnet_50',
+ 'num_joints': 4,
+ 'optimizer': 'sgd',
+ 'pairwise_huber_loss': True,
+ 'pairwise_predict': False,
+ 'partaffinityfield_predict': False,
+ 'regularize': False,
+ 'scoremap_dir': 'test',
+ 'shuffle': True,
+ 'snapshot_prefix': '/mnt/Data/Projects/cloud_deployment/Scripts/Cloud_Deployment_SER-Dev-2026-03-28/dlc-models/iteration-0/Cloud_Deployment_SERMar28-trainset95shuffle1/test/snapshot',
+ 'stride': 8.0,
+ 'weigh_negatives': False,
+ 'weigh_only_present_joints': False,
+ 'weigh_part_predictions': False,
+ 'weight_decay': 0.0001}

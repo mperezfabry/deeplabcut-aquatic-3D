@@ -1,0 +1,60 @@
+    # Project definitions (do not edit)
+Task: Cloud_Deployment_SER
+scorer: Dev
+date: Mar28
+multianimalproject: false
+identity:
+
+    # Project path (change when moving around)
+project_path: 
+  /mnt/Data/Projects/cloud_deployment/Scripts/Cloud_Deployment_SER-Dev-2026-03-28
+
+    # Annotation data set configuration (and individual video cropping parameters)
+video_sets:
+  /mnt/Data/Projects/cloud_deployment/videos/20260318_SERedt/20260318SER_t7w1_redlinear_GX010260.MP4:
+    crop: 0, 3840, 0, 2160
+bodyparts:
+- Snout
+- DorsalFin
+- TailBase
+- TailTip
+start: 0
+stop: 1
+numframes2pick: 150
+
+    # Plotting configuration
+skeleton:
+- - Snout
+  - DorsalFin
+- - DorsalFin
+  - TailBase
+- - TailBase
+  - TailTip
+skeleton_color: black
+pcutoff: 0.05
+dotsize: 35
+alphavalue: 1.0
+colormap: rainbow
+
+    # Training,Evaluation and Analysis configuration
+TrainingFraction:
+- 0.95
+iteration: 0
+default_net_type: resnet_50
+default_augmenter: default
+snapshotindex: -1
+batch_size: 8
+
+    # Cropping Parameters (for analysis and outlier frame detection)
+cropping: false
+    #if cropping is true for analysis, then set the values here:
+x1: 0
+x2: 640
+y1: 277
+y2: 624
+
+    # Refinement configuration (parameters from annotation dataset configuration also relevant in this stage)
+corner2move2:
+- 50
+- 50
+move2corner: true
